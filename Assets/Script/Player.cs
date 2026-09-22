@@ -5,6 +5,7 @@ public class Player : MonoBehaviour
 {
     public float speed = 5f;
    private Rigidbody2D rb;
+    private bool isGrounded = false;
     void Start()
     {
 
@@ -19,12 +20,41 @@ public class Player : MonoBehaviour
         float moveHorizontal = Input.GetAxis("Horizontal"); //Reconhece o MoviHorizonal e adiciona a tecla A e D com teclas para movimentos
         rb.linearVelocity = new Vector2(moveHorizontal * speed, rb.linearVelocity.y); // 
 
-        if(Input.GetKey(KeyCode.Space))
+        if(Input.GetKey(KeyCode.Space)&& isGrounded)
         {
 
           rb.AddForce(new Vector2(0f, 5f), ForceMode2D.Impulse);
 
 
         }
+
     }
+
+
+     void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true; // via reconhecer quando o jogodo estive no ar
+
+
+        }
+    }
+       void OnCollisionExit2D(Collision2D collision)
+       {
+
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+
+            isGrounded = false;
+
+        }
+       }
+
+          
+
+
+
 }
+
+
