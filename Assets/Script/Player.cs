@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
         float moveHorizontal = Input.GetAxis("Horizontal"); //Reconhece o MoviHorizonal e adiciona a tecla A e D com teclas para movimentos
         rb.linearVelocity = new Vector2(moveHorizontal * speed, rb.linearVelocity.y); // 
 
-        if(Input.GetKey(KeyCode.Space)&& isGrounded)
+        if(Input.GetKeyDown(KeyCode.Space)&& isGrounded)
         {
 
           rb.AddForce(new Vector2(0f, 5f), ForceMode2D.Impulse);
