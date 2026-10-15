@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Caverna Sombria de Ossos e Espinhos_0: -5974011978218035302
+      Caverna Sombria de Ossos e Espinhos_1: -6590248809000321037
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

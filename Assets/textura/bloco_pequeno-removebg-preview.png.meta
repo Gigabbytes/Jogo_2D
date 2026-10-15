@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bloco_pequeno-removebg-preview_0: -5279647720813924567
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
