@@ -5,6 +5,7 @@ public class Dano : MonoBehaviour
     private Vector3 inicio;
     float invencibilidade = 0f;
     bool imortal = false;
+    public MenuScene menu;
     void Start()
     {
         
@@ -42,7 +43,7 @@ public class Dano : MonoBehaviour
     {
         if (collision.collider.CompareTag("Espinho") && imortal == false)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            menu.MostrarGameOver();
         }
     }
 
