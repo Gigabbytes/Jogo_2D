@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - Espinho
+  - Portal
+  - PortalF
   layers:
   - Default
   - TransparentFX
