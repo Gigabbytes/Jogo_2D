@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Moldura G\xF3tica para HUD Sombrio_0": 7342967038275462397
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

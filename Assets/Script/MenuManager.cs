@@ -4,14 +4,14 @@ public class MenuManager : MonoBehaviour
 {
     public void StarGame()
     {
-        SceneManager.LoadScene("Fase 1");
+        SceneManager.LoadScene("Fase 1"); // carrega a cena "Fase 1"
 
     }
 
-    public void QuitGame()
+    public void QuitGame() // função botão Sair
     {
 
-     Application.Quit();
+     Application.Quit(); // fecha o jogo
 
     }
 
